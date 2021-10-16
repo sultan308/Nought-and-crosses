@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Connecting to the google fonts server and accessing the the raleway font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    
+    <!-- Linking css and javascript to the html files-->
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <script src="js/script.js"></script>
+
+    <title>Question 3 - Noughts & Crosses</title>
+
+</head>
+
+<!-- once the body is interpeted the setup function is called to create the board-->
+<body onload="setup()">
+
+    <div class="header">
+        <span class="noughts">Noughts</span> & <span class = "crosses">Crosses</span>
+    </div>
+    <!--Feedback-div inner html will be changed often to give feedback to the user-->
+    <div id= "feedback-div">
+        Player X's turn
+    </div>
+    <!--Boarder-container will hold the whole board when its created-->
+    <div id = "board-container">
+        <!--When rows are created they will be insterded as children of the board div-->
+        <div id = "board">
+            
+        </div>
+    </div>
+    <!--The reset id  is for the div reset that acts like a button to call a function that starts a new game-->
+    <div id="reset" onclick="newGame();">
+        Reset
+    </div>  
+
+</body>
+</html>
