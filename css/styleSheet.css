@@ -1,0 +1,96 @@
+body
+{
+    background-color: #212529;
+    color: #F8F9FA;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    max-width: 100%;
+}
+div
+{
+    background-color: #343A40;
+    height: fit-content;
+    text-align: center;
+}
+span
+{
+    line-height: 200px;
+}
+div.header
+{   
+    background-color: #212529;
+    font-weight: 700;
+    font-size: 4em;
+    padding: 20px;
+    width : calc(100% - 20px*2);
+}
+div.sep
+{
+    font-size: 3em;
+    font-weight: 500;
+    padding: auto;
+    padding: 5px;
+    width: calc(100%-10px);
+}
+div.row /*This class will be assigned to every row created in the board*/
+{
+    height: 206px;
+    width:  618px;   
+}
+div.cell /*This class will be assigned to every cell created in the board*/
+{
+    border: solid 3px #F8F9FA;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 4em;
+    height: 200px;
+    vertical-align: top;
+    width: 200px;
+}
+
+span.header,span.noughts,span.crosses /*This class will be assigned to every span created in the in the cell to hold the cell value*/
+{
+    line-height: 100px;
+}
+span.noughts
+{
+    color: #ff9500; 
+}
+span.crosses
+{
+    color: #38b000;
+}
+div#board-container
+{
+    background-color: #F8F9FA;
+    padding: 30px;
+    width: calc(100% - 30px*2); 
+}
+div#board
+{
+    margin: auto;
+    max-height: 618px; 
+    width: 618px;  
+}
+div#reset
+{
+    font-size: 1.5em;
+    padding: 10px;
+    color: #F8F9FA;
+    background-color: #d90429 ;
+    border: 0;
+    margin-bottom: 10px;
+}
+div#reset:hover
+{
+    background-color: #99051e;
+    color: #F8F9FA ;
+}
+div#feedback-div
+{
+    background-color: #38b000 ;
+    color: #F8F9FA ;
+    font-weight: 600;
+    font-size: 1.5em;  
+    line-height: 70px;  
+}
