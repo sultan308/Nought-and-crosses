@@ -2,7 +2,7 @@ var player = 0; // Keeps track of which player's turn it is.
 var gameRunning = true; // Turns false is a game has ended.
 var spacesLeft = 9; // keeps track od the number of empty cells.
 var symbols = ["X","O"] // has symboles indexed with matching players numbers.
-var colors = ["#38b000","#ff9500"] // has colours indexd with mathcing player number.
+var colors = ["#38b001","#ff9500"] // has colours indexd with mathcing player number.
 
 
 function setup() // Triggerd once the page has been interpeted.
